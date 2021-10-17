@@ -6,6 +6,6 @@ from core.models import evento
 
 class eventoadmin(admin.ModelAdmin):
     list_display = ("id","titulo","data_evento","data_criacao")
-    list_filter = ("titulo","data_evento",)
+    list_filter = ("titulo","data_evento","usuario")
 
 admin.site.register(evento,eventoadmin)
